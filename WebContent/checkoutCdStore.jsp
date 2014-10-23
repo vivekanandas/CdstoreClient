@@ -163,89 +163,21 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
         </li>
       </ul>
       
-      <!--- this part will be hidden for mobile version -->
+      <!--- this part will be hidden for c	x	 version -->
       <div class="nav navbar-nav navbar-right hidden-xs">
-        <div class="dropdown  cartMenu "> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-shopping-cart"> </i> <span class="cartRespons"> Cart ($210.00) </span> <b class="caret"> </b> </a>
+        <div class="dropdown  cartMenu "> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="cartRespons"> <i class="fa fa-shopping-cart fa-2x "></i> <span class="totalTop"> </span></span> <b class="caret"> </b> </a>
           <div class="dropdown-menu col-lg-4 col-xs-12 col-md-4 ">
-          <!--- Drop Down for Cart needed -->
-          <!--- TODO Populate form session -->
             <div class="w100 miniCartTable scroll-pane">
               <table>
-                <tbody>
-                  <tr class="miniCartProduct">
-                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a> </div></td>
-                    <td style="width:40%"><div class="miniCartDescription">
-                        <h4> <a href="product-details.html"> TSHOP Tshirt DO9 </a> </h4>
-                        <span class="size"> 12 x 1.5 L </span>
-                        <div class="price"> <span> $22 </span> </div>
-                      </div></td>
-                    <td  style="width:10%" class="miniCartQuantity"><a > X 1 </a></td>
-                    <td  style="width:15%" class="miniCartSubtotal"><span> $33 </span></td>
-                    <td  style="width:5%" class="delete"><a > x </a></td>
-                  </tr>
-                  <tr class="miniCartProduct">
-                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/2.jpg" alt="img"> </a> </div></td>
-                    <td  style="width:40%"><div class="miniCartDescription">
-                        <h4> <a href="product-details.html"> TShir TSHOP 09 </a> </h4>
-                        <span class="size"> 12 x 1.5 L </span>
-                        <div class="price"> <span> $15 </span> </div>
-                      </div></td>
-                    <td   style="width:10%" class="miniCartQuantity"><a > X 1 </a></td>
-                    <td  style="width:15%" class="miniCartSubtotal"><span> $120 </span></td>
-                    <td  style="width:5%" class="delete"><a > x </a></td>
-                  </tr>
-                  <tr class="miniCartProduct">
-                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/5.jpg" alt="img"> </a> </div></td>
-                    <td  style="width:40%"><div class="miniCartDescription">
-                        <h4> <a href="product-details.html"> Tshir 2014 </a> </h4>
-                        <span class="size"> 12 x 1.5 L </span>
-                        <div class="price"> <span> $30 </span> </div>
-                      </div></td>
-                    <td   style="width:10%" class="miniCartQuantity"><a > X 1 </a></td>
-                    <td  style="width:15%" class="miniCartSubtotal"><span> $80 </span></td>
-                    <td  style="width:5%" class="delete"><a > x </a></td>
-                  </tr>
-                  <tr class="miniCartProduct">
-                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a> </div></td>
-                    <td  style="width:40%"><div class="miniCartDescription">
-                        <h4> <a href="product-details.html"> TSHOP T shirt DO20 </a> </h4>
-                        <span class="size"> 12 x 1.5 L </span>
-                        <div class="price"> <span> $15 </span> </div>
-                      </div></td>
-                    <td   style="width:10%" class="miniCartQuantity"><a > X 1 </a></td>
-                    <td  style="width:15%" class="miniCartSubtotal"><span> $55 </span></td>
-                    <td  style="width:5%" class="delete"><a > x </a></td>
-                  </tr>
-                  <tr class="miniCartProduct">
-                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/product/4.jpg" alt="img"> </a> </div></td>
-                    <td  style="width:40%"><div class="miniCartDescription">
-                        <h4> <a href="product-details.html"> T shirt Black </a> </h4>
-                        <span class="size"> 12 x 1.5 L </span>
-                        <div class="price"> <span> $44 </span> </div>
-                      </div></td>
-                    <td   style="width:10%" class="miniCartQuantity"><a > X 1 </a></td>
-                    <td  style="width:15%" class="miniCartSubtotal"><span> $40 </span></td>
-                    <td  style="width:5%" class="delete"><a > x </a></td>
-                  </tr>
-                  <tr class="miniCartProduct">
-                    <td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html"> <img src="images/site/winter.jpg" alt="img"> </a> </div></td>
-                    <td  style="width:40%"><div class="miniCartDescription">
-                        <h4> <a href="product-details.html"> G Star T shirt </a> </h4>
-                        <span class="size"> 12 x 1.5 L </span>
-                        <div class="price"> <span> $80 </span> </div>
-                      </div></td>
-                    <td   style="width:10%" class="miniCartQuantity"><a > X 1 </a></td>
-                    <td  style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
-                    <td  style="width:5%" class="delete"><a > x </a></td>
-                  </tr>
-                </tbody>
+                <tbody class="cartBody">
+               </tbody>
               </table>
             </div>
             <!--/.miniCartTable-->
             
             <div class="miniCartFooter text-right">
-              <h3 class="text-right subtotal"> Subtotal: $210 </h3>
-              <a class="btn btn-sm btn-danger"> <i class="fa fa-shopping-cart"> </i> VIEW CART </a> <a class="btn btn-sm btn-primary"> CHECKOUT </a> </div>
+              <h3 class="text-right subtotal"> Subtotal: $ </h3>
+              <a class="btn btn-sm btn-primary " href="checkoutCdStore.jsp"> CHECKOUT </a> </div>
             <!--/.miniCartFooter--> 
             
           </div>
@@ -280,7 +212,7 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
       <h1 class="section-title-inner"><span><i class="glyphicon glyphicon-shopping-cart"></i> Checkout</span></h1>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
-      <h4 class="caps"><a href="category.html"><i class="fa fa-chevron-left"></i> Back to shopping </a></h4>
+      <h4 class="caps"><a href="index.jsp"><i class="fa fa-chevron-left"></i> Back to shopping </a></h4>
     </div>
   </div> <!--/.row-->
   
@@ -298,35 +230,35 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
               	<div class="col-xs-12 col-sm-6">
 	                <div class="form-group required">
 	                  <label for="InputName">First Name <sup>*</sup> </label>
-	                  <input required type="text" class="form-control" name="InputName" id="InputName" placeholder="First Name">
+	                  <input required type="text" class="form-control" name="InputFirstName" id="InputFirstName" placeholder="First Name">
 	                </div>
 	                <div class="form-group required">
 	                  <label for="InputLastName">Last Name <sup>*</sup> </label>
-	                  <input required type="text" class="form-control" id="InputLastName" placeholder="Last Name">
+	                  <input required type="text" class="form-control" name="InputLastName" id="InputLastName" placeholder="Last Name">
 	                </div>
 	                <div class="form-group">
 	                  <label for="InputEmail">Email </label>
-	                  <input type="text" class="form-control" id="InputEmail" placeholder="Email">
+	                  <input type="text" class="form-control" name="InputEmail" id="InputEmail" placeholder="Email">
 	                </div>
 	                <div class="form-group">
 	                  <label for="InputCompany">Company </label>
-	                  <input type="text" class="form-control" id="InputCompany" placeholder="Company">
+	                  <input type="text" class="form-control" name="InputCompany" id="InputCompany" placeholder="Company">
 	                </div>
 	                <div class="form-group required">
 	                  <label for="InputAddress">Address <sup>*</sup> </label>
-	                  <input required type="text" class="form-control" id="InputAddress" placeholder="Address">
+	                  <input required type="text" class="form-control" name="InputAddress" id="InputAddress" placeholder="Address">
 	                </div>
 	                <div class="form-group">
 	                  <label for="InputAddress2">Address (Line 2) </label>
-	                  <input type="text" class="form-control" id="InputAddress2" placeholder="Address">
+	                  <input type="text" class="form-control" name="InputAddress2" id="InputAddress2" placeholder="Address">
 	                </div>
 	                <div class="form-group required">
 	                  <label for="InputCity">City <sup>*</sup> </label>
-	                  <input required type="text" class="form-control" id="InputCity" placeholder="City">
+	                  <input required type="text" class="form-control" name="InputCity" id="InputCity" placeholder="City">
 	                </div>
 	                <div class="form-group required">
 	                  <label for="InputState">State <sup>*</sup> </label>
-	                  <select class="form-control" required aria-required="true" id="InputState" name="InputState">
+	                  <select class="form-control" required aria-required="true" name="InputState" id="InputState" name="InputState">
 	                      <option value="">Choose</option>
 	                    <option value="1">Alabama</option>
 	                    <option value="2">Alaska</option>
@@ -387,7 +319,7 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 	              <div class="col-xs-12 col-sm-6">
 	                <div class="form-group required">
 	                  <label for="InputZip">Zip / Postal Code <sup>*</sup> </label>
-	                  <input required type="text" class="form-control" id="InputZip" placeholder="Zip / Postal Code">
+	                  <input required type="text" class="form-control" name="InputZip" id="InputZip" placeholder="Zip / Postal Code">
 	                </div>
 	                <div class="form-group required">
 	                  <label for="InputCountry">Country <sup>*</sup> </label>
@@ -445,17 +377,9 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 	                    <option selected="selected" value="21">United States</option>
 	                  </select>
 	                </div>
-	                <div class="form-group">
-	                  <label for="InputAdditionalInformation">Additional information</label>
-	                  <textarea rows="3" cols="26" name="InputAdditionalInformation" class="form-control" id="other"></textarea>
-	                </div>
 	                <div class="form-group required">
 	                  <label for="InputMobile">Mobile phone <sup>*</sup></label>
 	                  <input  required type="tel"  name="InputMobile" class="form-control" id="InputMobile">
-	                </div>
-	                <div class="form-group required">
-	                  <label for="addressAlias">Please assign an address title for future reference. <sup>*</sup></label>
-	                  <input required type="text" value="My address" name="addressAlias" class="form-control" id="addressAlias">
 	                </div>
 	              </div>
 	            </div>
@@ -470,24 +394,24 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 	                  <br>
 	                  <div class="col-xs-12">
 	                    <div class="creditCard">
-	                     <div class="paymentInput">
-	                        <label for="CardNumber">Credit Card Number *</label>
+	                     <div class="paymentInput required">
+	                        <label for="InputCCNumber">Credit Card Number <sup>*</sup></label>
 	                        <br>
-	                        <input id="CardNumber" type="text" name="Number">
+	                        <input id="InputCCNumber" type="text" name="InputCCNumber">
+	                      </div>
+	                      <!--paymentInput-->
+	                      <div class="paymentInput required">
+	                        <label for="InputCCOwnerName">Name on Credit Card <sup>*</sup></label>
+	                        <br>
+	                        <input type="text" name="InputCCOwnerName" id="InputCCOwnerName">
 	                      </div>
 	                      <!--paymentInput-->
 	                      <div class="paymentInput">
-	                        <label for="CardNumber2">Name on Credit Card *</label>
-	                        <br>
-	                        <input type="text" name="CardNumber2" id="CardNumber2">
-	                      </div>
-	                      <!--paymentInput-->
-	                      <div class="paymentInput">
-	                        <div class="form-group">
-	                          <label>Expiration date *</label>
+	                        <div class="form-group required">
+	                          <label>Expiration date <sup>*</sup></label>
 	                          <br>
 	                          <div class="col-lg-4 col-md-4 col-sm-4 no-margin-left no-padding">
-	                            <select required aria-required="true" name="expire">
+	                            <select required aria-required="true" name="expire" name="InputCCEXPDate" id="InputCCEXPDate">
 	                              <option value="">Month</option>
 	                              <option value="1">01 - January</option>
 	                              <option value="2">02 - February</option>
@@ -504,7 +428,7 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 	                            </select>
 	                          </div>
 	                          <div class="col-lg-4 col-md-4 col-sm-4">
-	                            <select required aria-required="true" name="year">
+	                            <select required aria-required="true" name="year" name="InputCCEXPYr" id="InputCCEXPYr">
 	                              <option value="">Year</option>
 	                              <option value="2013">2013</option>
 	                              <option value="2014">2014</option>
@@ -524,10 +448,10 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 	                      <!--paymentInput-->
 	                      
 	                      <div style="clear:both"></div>
-	                      <div class="paymentInput clearfix">
-	                        <label for="VerificationCode">Verification Code *</label>
+	                      <div class="paymentInput clearfix required">
+	                        <label for="InputCCVrCode">Verification Code <sup>*</sup></label>
 	                        <br>
-	                        <input type="text" id="VerificationCode" name="VerificationCode" style="width:90px;">
+	                        <input type="text" id="InputCCVrCode" name="InputCCVrCode" style="width:90px;">
 	                        <br>
 	                      </div>
 	                      <!--paymentInput-->
@@ -558,23 +482,19 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 	          <tbody>
 	            <tr >
 	              <td>Total products</td>
-	              <td class="price" >$216.51</td>
+	              <td class="price " id="total-products"></td>
 	            </tr>
 	            <tr  style="">
 	              <td>Shipping</td>
 	              <td class="price" ><span class="success">Free shipping!</span></td>
 	            </tr>
 	            <tr class="cart-total-price ">
-	              <td>Total (tax excl.)</td>
-	              <td class="price" >$216.51</td>
-	            </tr>
-	            <tr >
-	              <td>Total tax</td>
-	              <td class="price" id="total-tax">$0.00</td>
+	              <td>Total</td>
+	              <td class="price totoalPriceCheckout" ></td>
 	            </tr>
 	            <tr >
 	              <td > Total </td>
-	              <td class=" site-color" id="total-price">$216.51</td>
+	              <td class=" site-color " id="total-price"></td>
 	            </tr>
 	          </tbody>
 	          <tbody>
@@ -633,20 +553,8 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 <!-- Order Processing Scripts 
 <script  type="text/javascript" src="assets/js/cdStoreOrderPrcessing.js"></script>
 -->
- <script>
- function processingOrder(){
-	 if ($("#InputName").val().length == 0)
-		{
-			alert("Please enter Your First Name");
-			return false;
-		}
-	 document.getElementById("processCDOrderFrom").submit();
- }
-	function validateBillingAddress() {
-
-	}
-
-	
- </script>
+<script src="assets/js/fall14.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/OrderProcessingfall14.js"></script>
 </body>
 </html>
