@@ -102,7 +102,7 @@ cart.display = function(){
 				$('.navCart').html("");
 				$.each(data.cds,function(){
 					totalItems++;
-					var content = '<tr class="miniCartProduct"><td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html" class="productDetail" data-id=""> <img src="images/product/'+this.title.replace(/\s/g, '')+'.jpg" alt="img"> </a> </div></td><td  style="width:40%"><div class="miniCartDescription"><h4> <a href="'+this.title.replace(/\s/g, '')+'.jsp">'+this.title+'</a> </h4><span class="size"></span><div class="price"> <span> $'+ this.price +' </span> </div></div></td><td   style="width:10%" class="miniCartQuantity"><a > X '+this.quantity+' </a></td><td  style="width:15%" class="miniCartSubtotal"><span> $'+this.subTotal+' </span></td><td  style="width:5%" class="deleteCartItem" data-id="'+this.id+'"><a > <i class="fa fa-trash"></i> </a></td></tr>';
+					var content = '<tr class="miniCartProduct"><td style="width:20%" class="miniCartProductThumb"><div> <a href="#" class="productDetail" data-id=""> <img src="images/product/'+this.title.replace(/\s/g, '')+'.jpg" alt="img"> </a> </div></td><td  style="width:40%"><div class="miniCartDescription"><h4> <a href="'+this.title.replace(/\s/g, '')+'.jsp">'+this.title+'</a> </h4><span class="size"></span><div class="price"> <span> $'+ this.price +' </span> </div></div></td><td   style="width:10%" class="miniCartQuantity"><a > X '+this.quantity+' </a></td><td  style="width:15%" class="miniCartSubtotal"><span> $'+this.subTotal+' </span></td><td  style="width:5%" class="deleteCartItem" data-id="'+this.id+'"><a > <i class="fa fa-trash"></i> </a></td></tr>';
 					$('.cartBody').append(content);
 					$('.navCart').append(content);
 				});
