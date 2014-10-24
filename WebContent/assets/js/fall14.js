@@ -3,6 +3,33 @@
  * 
  */
 $(function(){
+	$.ajax({
+		async :	true, 
+		url   : '//localhost:7080/CDOrderProcessing/OPService/CategoryService/getList',
+		type  : 'get',
+		data  : {},
+		dataType : 'json'
+}).done(function(data){
+	if(data){
+		$.each(data, function() {
+			$.each(this,function(key,value){
+				if(key == 'name'){
+					$('#categoryUl').append('<li ><a class="cat" data-category="'+value+'"><strong>'+value+'</strong></a></li>');	
+				}
+			});
+			
+		});
+		$(".cat").on('click',function(){
+	  		//alert($(this).data('category'));
+	  		cd.retrive($(this).data('category'));	
+	  	});
+		$('.cat').css('textTransform', 'capitalize');
+		
+	}
+	else{
+		alert('unknown error');
+	}
+});
 	cd.retrive('pop');
 	cart.display();
 });
@@ -71,9 +98,11 @@ cart.display = function(){
 			//console.log("data = "+data);
 			if(data){
 				$('.cartBody').html("");
+				$('.navCart').html("");
 				$.each(data.cds,function(){
-					var content = '<tr class="miniCartProduct"><td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html" class="productDetail" data-id=""> <img src="images/product/'+this.title.replace(/\s/g, '')+'.jpg" alt="img"> </a> </div></td><td  style="width:40%"><div class="miniCartDescription"><h4> <a href="'+this.title.replace(/\s/g, '')+'.jsp">'+this.title+'</a> </h4><span class="size"></span><div class="price"> <span> $'+ this.price +' </span> </div></div></td><td   style="width:10%" class="miniCartQuantity"><a > X '+this.quantity+' </a></td><td  style="width:15%" class="miniCartSubtotal"><span> $'+this.subTotal+' </span></td><td  style="width:5%" class="deleteCartItem" data-id="'+this.id+'"><a > X </a></td></tr>';
+					var content = '<tr class="miniCartProduct"><td style="width:20%" class="miniCartProductThumb"><div> <a href="product-details.html" class="productDetail" data-id=""> <img src="images/product/'+this.title.replace(/\s/g, '')+'.jpg" alt="img"> </a> </div></td><td  style="width:40%"><div class="miniCartDescription"><h4> <a href="'+this.title.replace(/\s/g, '')+'.jsp">'+this.title+'</a> </h4><span class="size"></span><div class="price"> <span> $'+ this.price +' </span> </div></div></td><td   style="width:10%" class="miniCartQuantity"><a > X '+this.quantity+' </a></td><td  style="width:15%" class="miniCartSubtotal"><span> $'+this.subTotal+' </span></td><td  style="width:5%" class="deleteCartItem" data-id="'+this.id+'"><a > <i class="fa fa-trash"></i> </a></td></tr>';
 					$('.cartBody').append(content);
+					$('.navCart').append(content);
 				});
 				$('.deleteCartItem').on('click',function(){
 					cart.deleteItem($(this).data('id'));

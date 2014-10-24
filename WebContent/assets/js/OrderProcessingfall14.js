@@ -36,81 +36,81 @@ function processingOrder() {
 function validateInput() {
 	var userFirstName = $.trim($("#InputFirstName").val());
 	if (!validateUsername(userFirstName)) {
-		alert("Please enter a valid First Name");
+		bootbox.alert("Please enter a valid First Name");
 		return false;
 	}
 
 	var userLastName = $.trim($("#InputLastName").val());
 	if (!validateUsername(userLastName)) {
-		alert("Please enter a valid Last Name");
+		bootbox.alert("Please enter a valid Last Name");
 		return false;
 	}
 
 	var zipCode = $.trim($("#InputZip").val());
 	if (!validateZipPostalCode(zipCode)) {
-		alert("Please enter a valid ZIP Code");
+		bootbox.alert("Please enter a valid ZIP Code");
 		return false;
 	}
 
 	var iCountry = $("#InputCountry option:selected").val();
 	if (iCountry.length == 0) {
-		alert("Please select a Country from drop down.");
+		bootbox.alert("Please select a Country from drop down.");
 		return false;
 	}
 
 	var email = $.trim($("#InputEmail").val());
 	if (!validateEmail(email)) {
-		alert("Please enter a valid email address.");
+		bootbox.alert("Please enter a valid email address.");
 		return false;
 	}
 	var mobile = $.trim($("#InputMobile").val());
 	if (!validatePhoneNumber(mobile)) {
-		alert("Please enter a valid phone number.");
+		bootbox.alert("Please enter a valid phone number.");
 		return false;
 	}
 
 	if ($("#InputAddress").val().length == 0) {
-		alert("Please enter a valid address");
+		bootbox.alert("Please enter a valid address");
 		return false;
 	}
 
 	if ($("#InputCity").val().length == 0) {
-		alert("Please enter a valid City.");
+		bootbox.alert("Please enter a valid City.");
 		return false;
 	}
 
 	if ($("#InputCity").val().length == 0) {
-		alert("Please enter a valid City.");
+		bootbox.alert("Please enter a valid City.");
 		return false;
 	}
 
 	var state_province = $("#InputState option:selected").val();
 	if (state_province.length == 0) {
-		alert("Please select a State/province from the drop down.");
+		bootbox.alert("Please select a State/province from the drop down.");
 		return false;
 	}
 
 	// Check CreditCard information
 	var card_number = $.trim($("#InputCCNumber").val());
 	if (card_number.length == 0 || !validateIntegerValue(card_number)) {
-		alert("Credit card number is required and must only contain numeric values");
+		bootbox.alert("Credit card number is required and must only contain numeric values");
 		return false;
 	}
 
 	var CCUsername = $.trim($("#CCUsername").val());
 	if (!validateUsername(CCUsername)) {
-		alert("Please enter a valid name for the credit card");
+		bootbox.alert("Please enter a valid name for the credit card");
 		return false;
 	}
 	var iCCexp = $("#InputCCEXPDate option:selected").val();
 	if (iCCexp.length == 0) {
-		alert("Please select a Credit Card Expiry date from drop down.");
+		bootbox.alert("Please select a Credit Card Expiry date from drop down.");
 		return false;
 	}
 
 	var iCCexpYr = $("#InputCCEXPYr option:selected").val();
 	if (iCCexpYr.length == 0) {
-		alert("Please select a Credit Card Expiry year from drop down.");
+		bootbox.alert("Please select a Credit Card Expiry year from drop down.");
 		return false;
 	}
 

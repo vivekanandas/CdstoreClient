@@ -12,7 +12,8 @@
 <title>TSHOP - Bootstrap E-Commerce Parallax Theme</title>
 
 <!-- Bootstrap core CSS -->
-<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- add theme styles for this template -->
 <link id="pagestyle" rel="stylesheet" type="text/css" href="assets/css/skin-1.css">
 
@@ -131,7 +132,7 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </button>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-cart"> <i class="fa fa-shopping-cart colorWhite"> </i> <span class="cartRespons colorWhite"> Cart ($210.00) </span> </button>
-      <a class="navbar-brand " href="index.html"> <img src="images/logo.png" alt="TSHOP"> </a> 
+      <a class="navbar-brand " href="index.html"> <img src="images/product/store.gif" alt="TSHOP"> </a> 
       
       <!-- this part for mobile -->
       <div class="search-box pull-right hidden-lg hidden-md hidden-sm">
@@ -147,20 +148,6 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <!-- change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width -->
-        <li class="dropdown megamenu-80width "> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Categories <b class="caret"> </b> </a>
-          <ul class="dropdown-menu">
-            <li class="megamenu-content"> 
-              
-              <!-- megamenu-content -->
-              
-              <ul id="categoryUl" class="col-lg-2  col-sm-2 col-md-2  unstyled">
-                <li>
-                  <p> <strong> Categories </strong> </p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
       </ul>
       
       <!--- this part will be hidden for c	x	 version -->
@@ -467,8 +454,7 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
           </div>
           <div class="cartFooter w100">
             <div class="box-footer">
-              <div class="pull-left"> <a class="btn btn-default" href="index.html"> <i class="fa fa-arrow-left"></i> &nbsp; Back to Shop </a> </div>
-              <div class="pull-right"> <a class="btn btn-primary btn-small "  href="checkout-2.html"> Shipping address &nbsp; <i class="fa fa-arrow-circle-right"></i> </a> </div>
+              <div class="pull-left"> <a class="btn btn-default" href="index.jsp"> <i class="fa fa-arrow-left"></i> &nbsp; Back to Shop </a> </div>
             </div>
           </div>
           <!--/ cartFooter --> 
@@ -520,7 +506,8 @@ document.getElementById('pagestyle').setAttribute('href', sheet);
 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script type="text/javascript" src="assets/js/jquery/1.8.3/jquery.js"></script> 
-<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.2.0/bootbox.min.js"></script> 
 
 <!-- include  parallax plugin --> 
 <script type="text/javascript"  src="assets/js/jquery.parallax-1.1.js"></script> 
