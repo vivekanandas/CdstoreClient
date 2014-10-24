@@ -32,7 +32,7 @@
 
  .minict_wrapper:after {
 	color: #34495E;
-    content: "▼";
+/*     content: "▼"; */
     display: block;
     font-size: 0.99rem;
     height: 2.1rem;
